@@ -24,7 +24,7 @@ class CoinDataService{
     }
     
     
-    private func getCoins(){
+     func getCoins(){
         
         guard let url = URL(string: "https://api.coingecko.com/api/v3/coins/markets?vs_currency=eur&order=market_cap_desc&per_page=250&page=1&sparkline=true&price_change_percentage=24h") //Viene creato un URL usando una stringa che punta all'API di CoinGecko
                 

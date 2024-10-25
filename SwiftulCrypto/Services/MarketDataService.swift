@@ -23,7 +23,7 @@ class MarketDataService{
     }
     
     
-    private func getData(){
+     func getData(){
         guard let url = URL(string: "https://api.coingecko.com/api/v3/global") //Viene creato un URL usando una stringa che punta all'API di CoinGecko
         else {return}
                 
