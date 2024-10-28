@@ -14,4 +14,12 @@ extension String {
         formatter.numberStyle = .decimal
         return formatter.number(from: self)?.doubleValue
     }
+    
+    
+    var removingHTMLOccurances: String{
+        self.replacingOccurrences(of: "<[^>]+>", with: "", options: .regularExpression, range: nil)
+    }
 }
+
+
+
